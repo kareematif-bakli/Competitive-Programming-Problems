@@ -1,0 +1,59 @@
+//UVa problem on Binary-Search technique 10611 - The Playboy Chimp
+/*
+#include<bits/stdc++.h>
+using namespace std;
+const int N=1e5+5,OO=0x3f3f3f3f;
+char str[N];
+
+int main()
+{
+	int n,q,x;
+	scanf("%d",&n);
+	vector<int>v;
+	for(int i=0;i<n;i++)
+	{
+		int a;
+		scanf("%d",&a);
+		v.push_back(a);
+	}
+	scanf("%d",&q);
+	while(q--)
+	{
+		scanf("%d",&x);
+		int s=0,e=n-1,md,ans=-1;
+		while(s<=e)
+		{
+			md=s+(e-s)/2;
+			if(v[md]<x)
+			{
+				ans=v[md];
+				s=md+1;
+			}
+			else
+			e=md-1;
+		//	printf("%d ",v[md]);
+		}
+		if(ans==-1)
+		printf("X ");
+		else
+		printf("%d ",ans);
+		//Second search for first greatest element than x
+		s=0,e=n-1,md,ans=-1;
+		while(s<=e)
+		{
+			md=s+(e-s)/2;
+			if(v[md]>x)
+			{
+				ans=v[md];
+				e=md-1;
+			}
+			else
+			s=md+1;
+		}
+		if(ans==-1)
+		printf("X\n");
+		else
+		printf("%d\n",ans);
+			
+		}	
+}
