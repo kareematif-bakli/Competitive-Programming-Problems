@@ -4,7 +4,7 @@
 using namespace std;
 const int N=1e5+5,OO=0x3f3f3f3f;
 char str[N];
-
+//*******YOU CAN DO IT LET'S TRY********
 int main()
 {
 	int n,q,x;
