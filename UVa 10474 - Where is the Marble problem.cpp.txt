@@ -1,9 +1,10 @@
+//Problem on Binary search technique
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
 const int N=1e5+5,OO=0x3f3f3f;
 char str[N];
-//***********YOU CAN DO IT***********
+//***********YOU CAN DO IT GIVE IT A TRY***********
 int main()
 {
    	int n,q,cnt=1;
