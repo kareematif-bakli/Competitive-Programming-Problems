@@ -1,2 +1,2 @@
-# UVa-problems
-Solution of UVa problems
+Solution of competitive programming 
+programs
